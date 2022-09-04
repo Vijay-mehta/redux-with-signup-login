@@ -11,7 +11,7 @@ import rootReducer from './services/reducers/Index'
 
 const store =creatStore(rootReducer,applyMiddleware(thunk))
 
-console.log(store)
+console.log(store,"store")
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

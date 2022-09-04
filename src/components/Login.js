@@ -7,9 +7,9 @@ const Login = (props) => {
   console.log(props.data)
 
 
-  const { token } = props.data.userData.data;
-  console.log(token)
-       localStorage.setItem("token", token); 
+  // const { token } = props?.data?.userData?.data;
+  // console.log(token)
+       localStorage.setItem("token",JSON.parse(props?.data?.userData?.data) ); 
 // 
   const {register,handleSubmit,formState:{errors}} =useForm();
 

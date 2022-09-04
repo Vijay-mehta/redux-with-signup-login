@@ -41,7 +41,6 @@ export const loginfun = (payload) => async (dispatch) => {
             data:payload
         }
         const {data} = await axios(loginData)
-    
        dispatch({
         type: LOGIN,
         payload: data
